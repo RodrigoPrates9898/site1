@@ -1,0 +1,325 @@
+/* #region global */
+
+
+/* redefinição */
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Impede rolagem horizontal */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+a {
+
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+
+/* #endregion */
+
+/*#region Navbar*/
+
+
+.Header {
+
+    background: #404040;
+    padding-inline: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    color: white;
+
+
+}
+
+.Nav {
+
+    max-width: 1280px;
+    height: 95px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5em;
+
+
+}
+
+.logo {
+
+    height: 80px;
+
+}
+
+.Lista-nav {
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+
+}
+
+.Lista-nav a {
+
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+
+}
+
+/* #endregion */
+
+/*#region inicio*/
+
+#inicio {
+    background-color: #404040;
+    list-style: none;
+
+}
+
+#inicio video {
+
+    position: relative;
+    width: 100%;
+    z-index: 95;
+}
+
+
+
+
+
+.texto1 {
+
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 95;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+
+
+}
+
+.texto1 ul {
+
+    list-style: none;
+
+}
+
+
+.botao1 {
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 95;
+    height: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centraliza perfeitamente */
+    padding: 10px 20px;
+
+}
+
+.botao2 {
+    background-color: #4800ff;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.botao2:hover {
+    background-color: #3500b3;
+    transform: scale(1.05);
+}
+
+/* #endregion */
+
+/* #region galeria */
+#gallery {
+    width: 100%;
+    height: auto;
+    background-color: #404040;
+    padding: 2em 0;
+}
+
+.gallery-text {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.filter {
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.filter li {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.filter li:hover {
+    color: black;
+    background-color: red;
+}
+
+.gallery-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.gallery-inner {
+    padding: 0.5rem;
+}
+
+.gallery-inner img {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.5s;
+    filter: brightness(90%);
+    border-radius: 8px;
+}
+
+.gallery-inner img:hover {
+    filter: saturate(100%);
+    transform: scale(1.05);
+}
+
+
+
+
+
+/*#endregion*/
+
+/*#region Pacote*/
+
+#Pacote {
+
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+    background: #404040;
+
+
+}
+
+.pacote-container {
+
+    width: 100%;
+    height: 800px;
+
+
+
+}
+
+.pacote-texto {
+
+    padding-top: 4em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.pacote-img {
+
+
+    letter-spacing: 6em;
+    text-align: center;
+    padding-top: 5em;
+
+
+}
+
+.img-pacote {
+
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+
+
+}
+
+/*#endregion*/
+
+/*#region footer*/
+
+#footer {
+
+    background: #121e0c;
+    height: 260px;
+    color: white;
+
+}
+
+.footer-container {
+
+    text-align: center;
+    color: white;
+
+}
+
+.footer-guia {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    top: 90px;
+    position: relative;
+}
+
+.footer-guia A {
+
+    color: #fff;
+
+}
+
+.copyright {
+
+
+    position: relative;
+    top: 200px;
+
+}
+
+
+/*#endregion*/
